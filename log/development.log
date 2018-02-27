@@ -1,0 +1,286 @@
+Started GET "/" for 127.0.0.1 at 2018-02-27 18:55:32 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/eugenia/.rvm/rubies/ruby-head/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/eugenia/.rvm/rubies/ruby-head/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 298ms (Views: 10.7ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePages (20180227190334)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180227190334"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-02-27 19:03:49.831831"], ["updated_at", "2018-02-27 19:03:49.831831"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/pages" for 127.0.0.1 at 2018-02-27 19:04:45 +0000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.5ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 685ms (Views: 671.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2018-02-27 19:04:51 +0000
+Processing by PagesController#new as HTML
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/_form.html.erb (68.9ms)
+  Rendered pages/new.html.erb within layouts/application (74.7ms)
+Completed 200 OK in 111ms (Views: 97.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2018-02-27 19:04:54 +0000
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (33.6ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 90ms (Views: 50.6ms | ActiveRecord: 33.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:05:08 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/eugenia/.rvm/rubies/ruby-head/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/eugenia/.rvm/rubies/ruby-head/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 23ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:09:34 +0000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/eugenia/.rvm/rubies/ruby-head/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/eugenia/.rvm/rubies/ruby-head/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (3.9ms)
+Completed 200 OK in 24ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2018-02-27 19:09:46 +0000
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.5ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 186ms (Views: 178.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/new" for 127.0.0.1 at 2018-02-27 19:10:27 +0000
+Processing by PagesController#new as HTML
+  Rendering pages/new.html.erb within layouts/application
+  Rendered pages/_form.html.erb (17.3ms)
+  Rendered pages/new.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 57ms (Views: 41.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2018-02-27 19:10:29 +0000
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 67ms (Views: 63.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:13:45 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/eugenia/.rvm/rubies/ruby-head/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/eugenia/.rvm/rubies/ruby-head/lib/ruby/gems/2.5.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2018-02-27 19:17:26 +0000
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (1.1ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 72ms (Views: 61.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2018-02-27 19:17:58 +0000
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPage Load (0.4ms)[0m  [1m[34mSELECT "pages".* FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 131ms (Views: 127.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:23:40 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 131ms (Views: 126.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:29:58 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 49.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:30:10 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 64ms (Views: 30.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:30:51 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 31.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:42:41 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 74ms (Views: 68.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:43:24 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 37.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:45:25 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 44.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:47:45 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 64.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:50:31 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 32.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:51:38 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 34.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 19:53:17 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 31.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:00:17 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 88ms (Views: 86.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:01:40 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 74ms (Views: 71.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:04:09 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 31.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:04:20 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.1ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-02-27 20:05:19 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/contact"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:05:22 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:05:51 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 15.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:05:59 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 19.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:06:01 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 31.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:06:01 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 30.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-27 20:06:03 +0000
+Processing by DashboardController#index as HTML
+  Rendering dashboard/index.html.erb within layouts/application
+  Rendered dashboard/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 26.5ms)
+
+
